@@ -197,7 +197,7 @@ padding: 0 0 0.5rem 0;
     }
     .card2{
         position: relative;
-        right: 2vw;
+        
         padding: 0 0 0 3vh;
         margin: 0;
         width: 100vw;
@@ -228,4 +228,5 @@ padding: 0 0 0.5rem 0;
     .ratio{
         padding-top: 4%;
     }
+    
 }                                                                                           
