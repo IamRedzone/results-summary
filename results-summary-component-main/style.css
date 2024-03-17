@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+
+/* background */
+--Lightslateblue : hsl(252, 100%, 67%);
+--Lightroyalblue : hsl(241, 81%, 54%);
+
+/* circle */
+--Violetblue : hsla(256, 72%, 46%, 1);
+--Persianblue : hsla(241, 72%, 46%, 0);
+
+/* primary */
+--Lightred: hsl(0, 100%, 67%, 0.1);
+--Orangeyyellow: hsl(39, 100%, 56%, 0.1);
+--Greenteal: hsl(166, 100%, 37%, 0.1);
+--Cobaltblue: hsl(234, 85%, 45%, 0.1);
+
+/* primary but with no opacity */
+--lightred: hsl(0, 100%, 67%);
+--orangeyyellow: hsl(39, 100%, 56%);
+--greenteal: hsl(166, 100%, 37%);
+--cobaltblue: hsl(234, 85%, 45%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution{
+    position: fixed;
+    bottom: 1px;
+}
+body{
+    background-color: var(--White);
+    font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+
+
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 0;
+    position: relative;
+    top: 20vh;
+}
+.card{
+    min-height: 30vh;
+    min-width: fit-content;
+    position: relative;
+    
+}
+.content1{
+    font-size: 0.8rem;
+    padding-bottom: 0.7rem;
+}
+.card2{
+    text-align: left;
+background-color: var(--White);
+/* filter: drop-shadow(3px 4px 2px var(--Darkgrayblue)); */
+box-shadow: 4px 4px 8px var(--Paleblue);
+min-width: fit-content;
+min-height: fit-content;
+width: 240px;
+min-height: 46vh;
+border-radius: 0 20px 20px 0;
+position: relative;
+z-index: -2;
+}
+.card2-matter{
+    padding-left: 100px;
+}
+.box-container{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+padding: 1rem auto;   
+}
+.card2 h3{
+    padding: 0 0 1rem 0;
+}
+.box{
+    min-width: 80%;
+    height: 2   rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 0.35rem;
+}
+.box .first-w{
+    position: relative;
+    bottom: 4px;
+}
+.box:nth-child(1){
+    background-color: var(--Lightred);
+}
+.box:nth-child(2){
+    background-color: var(--Orangeyyellow);
+}
+.box:nth-child(3){
+    background-color: var(--Greenteal);
+}
+.box:nth-child(4){
+    background-color: var(--Cobaltblue);
+}
+.reaction{
+    color: var(--lightred);
+}
+.memory{
+    color: var(--orangeyyellow);
+}
+.verbal{
+    color: var(--greenteal);
+}
+.visual{
+    color: var(--cobaltblue);
+}
+.ratio{
+    color: hsla(0, 0%, 50%, 0.7);
+}
+.numerator{
+    font-weight: 700;
+    color: var(--Darkgrayblue);
+}
+.first-w{
+    font-weight: 700;
+}
+.card1{
+    background: linear-gradient(to bottom, var(--Lightslateblue), var(--Lightroyalblue));
+color: var(--White);
+text-align: center;
+border-radius: 20px;
+box-shadow: 4px 4px 8px var(--Lightlavender);
+}
+.card1 h2{
+padding: 0 0 0.5rem 0;
+}
+.card1 h3{
+    padding: 0 0 0.5rem 0 ;
+}
+.circle-sphere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.circle{
+    background: linear-gradient(to bottom, var(--Violetblue), var(--Persianblue));
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.matter{
+    padding: 1.5rem;
+}
+.for-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+.for-btn button{
+    width: 100%;
+    height: 2rem;
+    border-radius: 15px;
+    background-color: var(--Darkgrayblue);
+    color: white;
+    font-weight: 600;
+}
+
+@media (max-width: 440px) {
+    .main{
+ display: flex;
+ flex-direction: column;
+ gap: -5px;
+ padding-bottom: 10vh;
+ position: fixed;
+ top: -15px;
+
+ 
+    }
+    .card2{
+        position: relative;
+        right: 2vw;
+        padding: 0 0 0 3vh;
+        margin: 0;
+        width: 100vw;
+        z-index: -4;
+        bottom: 2vh;
+    }
+    .card1{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+    .circle{
+        width: 6rem;
+        height: 6rem;
+    }
+    .box{
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        padding: 0.3rem;
+    }
+    .name-w-icon{
+        padding-top:4%;
+    }
+    .ratio{
+        padding-top: 4%;
+    }
+}                                                                                           
