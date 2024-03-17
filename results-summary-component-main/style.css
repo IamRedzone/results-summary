@@ -177,13 +177,17 @@ padding: 0 0 0.5rem 0;
 }
 .for-btn button{
     width: 100%;
+    cursor: pointer;
+    
     height: 2rem;
     border-radius: 15px;
     background-color: var(--Darkgrayblue);
     color: white;
     font-weight: 600;
 }
-
+button:hover{
+    background-color: hsl(234, 85%, 45%, 0.5);
+}
 @media (max-width: 440px) {
     .main{
  display: flex;
